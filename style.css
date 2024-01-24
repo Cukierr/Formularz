@@ -1,0 +1,149 @@
+*{
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    margin:0;
+    overflow: hidden;
+}
+h1{
+    color: whitesmoke;
+    font-size: 2.8em;
+    text-align: center;
+}
+main, footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #0f0f0f;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+footer table p{
+    color: whitesmoke;
+}
+#pokaz:hover{
+    outline:none;
+}
+label{
+    color: whitesmoke;
+}
+td{
+    text-align: right;
+}
+td p{
+    margin: 0;
+    width: 550px;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: red;
+}
+label{
+    font-weight: 500;
+    font-size: 1.5em;
+}
+input{
+    font-size: 1.5em;
+    padding: 1px 10px;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    transition: 250ms;
+    width: 270px;
+    margin-bottom: 2px;
+}
+form table{
+    left: 276px;
+    position: relative;
+}
+.wer{
+    text-align: left;
+}
+#pokaz{
+    height: 20px;
+    width: 20px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    float: left;
+    top: 8.5px;
+    left: 4px;
+    margin-right: 8px;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pokaz span{
+    height: 0px;
+    width: 0px;
+    border-radius: 2px;
+    background-color: #1a1a1a;
+    display: block;
+    transition: 100ms;
+}
+#pokaz:hover span{
+    height: 0px;
+    width: 0px;
+}
+.prawo{
+    text-align: left;
+}
+footer table .prawo{
+    border-left: whitesmoke 1px solid;
+}
+footer table {
+    border-collapse: collapse;
+    margin: 0;
+}
+footer table tr td{
+    padding: 0 10px;
+}
+#submit, #reset{
+    transition: 250ms;
+    border: none;
+    color: whitesmoke;
+    padding: 3px 5px;
+    width: auto;
+}
+#submit{
+    margin-right:10px ;
+    background-color: green;
+}
+#reset{
+    background-color: red;
+}
+#xd{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+#xd input{
+    width: 90px;
+}
+#zwrot{
+    position: relative;
+    left:-205px;
+}
+#submit:hover{
+    box-shadow: 0px 4px 6px -1px green;
+    transform: translate(0px, -4px);
+    color: green;
+    background-color: whitesmoke;
+}
+#reset:hover{
+    box-shadow: 0px 4px 6px -1px red;
+    transform: translate(0px, -4px);
+    color: red;
+    background-color: whitesmoke;
+}
+.efekt:focus{
+    box-shadow: 0px 4px 6px -2px whitesmoke;
+    transform: translate(0px, -4px);
+    background-color: whitesmoke;
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

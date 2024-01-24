@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moveTo/1.8.2/moveTo.min.js"></script>
+</head>
+<body>
+    <main>
+        <form id="formularz">
+            <h1>Formularz</h1>
+            <table>
+                <tr>
+                    <td><input type="text" class="efekt" id="imie" placeholder="Imie"></td>
+                    <td class="wer"><p id="werimie"></p></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="efekt" id="nazwisko" placeholder="Nazwisko"></td>
+                    <td class="wer"><p id="wernazwisko"></p></td>
+                </tr>
+                <tr>
+                    <td><input type="number" class="efekt" id="wiek" placeholder="Wiek"></td>
+                    <td class="wer"><p id="werwiek"></p></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="efekt" id="email" placeholder="E-mail"></td>
+                    <td class="wer"><p id="weremail"></p></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="efekt" id="telefon" placeholder="Numer telefonu"></td>
+                    <td class="wer"><p id="wertelefon"></p></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="efekt" id="adres" placeholder="Adres zamieszkania"></td>
+                    <td class="wer"><p id="weradres"></p></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="efekt" id="kodPocztowy" placeholder="Kod pocztowy"></td>
+                    <td class="wer"><p id="werkodPocztowy"></p></td>
+                </tr>
+                <tr>
+                    <td><input type="password" class="efekt" id="haslo" placeholder="Hasło"></td>
+                    <td class="wer"><p id="werhaslo"></p></td>
+                </tr>
+                <tr>
+                    <td class="prawo"><span id="pokaz"><span id="jd"></span></span><label>Pokaż hasło</label></td>
+                </tr>
+                <tr>
+                    <td><input type="password" class="efekt" id="powhaslo" placeholder="Powtórz hasło"></td>
+                    <td class="wer"><p id="werpowhaslo"></p></td>
+                </tr>
+                <tr id="xd">
+                    <td class="prawo"><input type="submit" id="submit"><input type="reset" id="reset"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><p id="zwrot"></p></td>
+                </tr>
+            </table>
+        </form>
+    </main>
+    <footer>
+        <h1>Twoje dane:</h1>
+        <table>
+            <tr>
+                <td><p>Imie</p></td>
+                <td class="prawo"><p id="xdimie"></p></td>
+            </tr>
+            <tr>
+                <td><p>Nazwisko</p></td>
+                <td class="prawo"><p id="xdnazwisko"></p></td>
+            </tr>
+            <tr>
+                <td><p>Wiek</p></td>
+                <td class="prawo"><p id="xdwiek"></p></td>
+            </tr>
+            <tr>
+                <td><p>E-mail</p></td>
+                <td class="prawo"><p id="xdemail"></p></td>
+            </tr>
+            <tr>
+                <td><p>Numer telefonu</p></td>
+                <td class="prawo"><p id="xdtelefon"></p></td>
+            </tr>
+            <tr>
+                <td><p>Adres zamieszkania</p></td>
+                <td class="prawo"><p id="xdadres"></p></td>
+            </tr>
+            <tr>
+                <td><p>Kod pocztowy</p></td>
+                <td class="prawo"><p id="xdkodpocztowy"></p></td>
+            </tr>
+        </table>
+    </footer>
+    <script src="skrypt.js"></script>
+</body>
+</html>
