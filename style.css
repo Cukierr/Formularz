@@ -78,7 +78,7 @@ form table{
     height: 0px;
     width: 0px;
     border-radius: 2px;
-    background-color: #1a1a1a;
+    background-color: #6dbdff;
     display: block;
     transition: 100ms;
 }
@@ -86,15 +86,25 @@ form table{
     height: 0px;
     width: 0px;
 }
+.efekt{
+    border: 2px solid #6dbdff;
+}
 .prawo{
     text-align: left;
 }
 footer table .prawo{
     border-left: whitesmoke 1px solid;
 }
+footer #xddd{
+    position: relative;
+}
 footer table {
     border-collapse: collapse;
     margin: 0;
+    filter: blur(1em);
+    transition: 250ms;
+    position: relative;
+    user-select:none;
 }
 footer table tr td{
     padding: 0 10px;
@@ -138,7 +148,7 @@ footer table tr td{
     background-color: whitesmoke;
 }
 .efekt:focus{
-    box-shadow: 0px 4px 6px -2px whitesmoke;
+    box-shadow: 0px 4px 6px -2px #6dbdff;
     transform: translate(0px, -4px);
     background-color: whitesmoke;
     outline: none;
@@ -146,4 +156,22 @@ footer table tr td{
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+::placeholder{
+    color:#6dbdff
+}
+#tak{
+    position: relative;
+    top: -55%;
+    text-align: center;
+    transition: 250ms;
+    z-index: 2;
+}
+h3{
+    color: whitesmoke;
+    font-size: 1.5em;
+    margin-bottom: 8px;
+}
+#danehaslo:focus{
+    outline: none;
 }
