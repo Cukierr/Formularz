@@ -12,6 +12,7 @@ let kodPocztowy = document.getElementById('kodPocztowy')
 let werkodPocztowy = document.getElementById('werkodPocztowy')
 let powhaslo = document.getElementById('powhaslo')
 let werpowhaslo = document.getElementById('werpowhaslo')
+let danehaslo = document.getElementById('danehaslo')
 
 const litera = new RegExp('^[AaĄąBbCcĆćDdEeĘęFfGgHhIiJjKkLlŁłMmNnŃńOoÓóPpRrSsŚśTtUuWwYyZzŻżŹź ]{1,}$');
 const liczba = new RegExp('^[0-9]{1,}$');
@@ -250,6 +251,14 @@ document.getElementById('pokaz').addEventListener("click", function(){
         xd.style.width = '16px'
         xd.style.height = '16px'
         haslo.type = 'text';
+    }
+})
+danehaslo.addEventListener("input", function(){
+    if(danehaslo.value == haslo.value){
+        document.getElementById("tak").style.opacity = '0';
+        document.getElementById('qwerty').style.filter = 'blur(0)'
+        document.getElementById('qwerty').style.zIndex = '3'
+        document.getElementById('qwerty').style.userSelect = 'auto'
     }
 })
 document.getElementById('formularz').addEventListener("submit", function(event){
